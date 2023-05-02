@@ -16,13 +16,15 @@
 }
 
 .input-section{
-    flex-grow: 3;
+    flex: 3 1;
     padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .input-container{
     padding: 2rem 2rem 0rem 10rem;
-    height: 75%;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -95,8 +97,19 @@
     border: 1px solid #0A3871;
 }
 
+#result {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#result .button-type2{
+    flex: none;
+}
+
 .result-section {
-    flex: 1;
+    flex: 1 1;
     background-color: #fff;
     padding: 2rem;
     display: flex;
@@ -108,6 +121,12 @@
 
 .no-content_message{
     text-align: center;
+}
+
+.decrypted_message {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    overflow: auto;
 }
 
 .no-content_message p {
@@ -177,4 +196,3 @@ footer {
         padding-top: 4rem;
     }
 }
-
