@@ -125,6 +125,7 @@
 }
 
 .decrypted_message {
+    height: 100%;
     font-size: 1.5rem;
     margin-bottom: 2rem;
     overflow: auto;
@@ -163,7 +164,7 @@ footer {
         width: 90%;
         margin: 0 auto;
     }
-    .input{
+    .input, .decrypted_message{
         min-height: 18rem;
     }
     .input-container, .buttons-container, .logo{
@@ -189,6 +190,9 @@ footer {
     }
     .input{
         min-height: 39rem;
+    }
+    .decrypted_message{
+        min-height: 18rem;
     }
     .input-container, .buttons-container{
         padding-left: 2rem;

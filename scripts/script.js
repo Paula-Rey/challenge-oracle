@@ -50,12 +50,17 @@ for (const [key, value] of Object.entries(values)) {
 }
 
 const decrypt = () => {
-    const text = textarea.value;
+    let text = textarea.value;
 
-    console.log(reverseValues)
-    
-    // Buscar los valores y reemplazar por las llaves
+    for(let crypt in reverseValues) {
+        if (text.includes(crypt)){
+            text = text.replaceAll(crypt, reverseValues[crypt])
+        }
+    }
 
+    message.value = text
+    result.style.display = 'flex';
+    noContent.style.display = 'none';
 }
 
 copyButton.addEventListener('click', function(){
